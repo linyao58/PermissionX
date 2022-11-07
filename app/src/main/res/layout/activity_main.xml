@@ -22,4 +22,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/but"/>
 
+    <Button
+        android:id="@+id/btu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="封装String类型的Toast"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/but1"/>
+
+    <Button
+        android:id="@+id/btu3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="封装Int类型的Toast"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btu2"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

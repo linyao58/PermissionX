@@ -36,6 +36,15 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        btu2.setOnClickListener {
+            "123456".showToast()
+            LogUtil.e("TAG", "Debug log")
+        }
+
+        btu3.setOnClickListener {
+            123456777.showToast()
+        }
+
     }
 
     private fun call(){
@@ -48,4 +57,13 @@ class MainActivity : AppCompatActivity() {
             e.printStackTrace()
         }
     }
+
+    fun String.showToast(duration:Int = Toast.LENGTH_SHORT){
+        Toast.makeText(MyApplication.context, this, duration).show()
+    }
+
+    fun Int.showToast(duration:Int = Toast.LENGTH_SHORT){
+        Toast.makeText(MyApplication.context, "$this", duration).show()
+    }
+
 }
