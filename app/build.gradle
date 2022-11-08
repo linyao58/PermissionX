@@ -2,6 +2,16 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+def app_name = "PermissionX"
+
+def renameApk(variant,defaultConfig,appName,version) {
+    variant.outputs.all {
+        def date = new Date().format("yyyyMMdd")
+        def apkName = appName+"-"+version+"-"+date+".apk"
+        outputFileName = apkName
+    }
+}
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
@@ -11,9 +21,17 @@ android {
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
-        versionName "1.0"
+        versionName "1.1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs{
+        debug{
+            applicationVariants.all { variant ->
+                    renameApk(variant,defaultConfig,app_name,"debug")
+            }
+        }
     }
 
     buildTypes {
