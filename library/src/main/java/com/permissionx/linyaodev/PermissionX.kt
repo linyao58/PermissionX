@@ -22,10 +22,9 @@ object PermissionX {
         fragment.requestNow(callback, *permissions)
     }
 
-//    fragment动态获取权限
+//  动态获取fragment的权限
     fun fragmentRequest(fragment: Fragment, vararg permissions: String, callback: PermissionCallback){
 
-//    viewPage与fragment搭配下，fragmentManager是获取fragment.childFragmentManager
         val fragmentManager = fragment.childFragmentManager
         val existedFragment = fragmentManager.findFragmentByTag(TAG)
         val fragment = if (existedFragment != null){
@@ -37,5 +36,6 @@ object PermissionX {
         }
         fragment.requestNow(callback, *permissions)
     }
+
 
 }

@@ -1,6 +1,8 @@
 package com.permissionx.app
 
 import android.Manifest
+import android.app.Activity
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -45,6 +47,10 @@ class MainActivity : AppCompatActivity() {
             123456777.showToast()
         }
 
+        btu4?.setOnClickListener {
+            startActivity<MainActivity2>(this)
+        }
+
     }
 
     private fun call(){
@@ -64,6 +70,11 @@ class MainActivity : AppCompatActivity() {
 
     fun Int.showToast(duration:Int = Toast.LENGTH_SHORT){
         Toast.makeText(MyApplication.context, "$this", duration).show()
+    }
+
+    inline fun <reified T> startActivity(context: Context){
+        val intent = Intent(context, T::class.java)
+        context.startActivity(intent)
     }
 
 }
