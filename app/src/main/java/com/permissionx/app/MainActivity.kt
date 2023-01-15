@@ -47,8 +47,12 @@ class MainActivity : AppCompatActivity() {
             123456777.showToast()
         }
 
-        btu4?.setOnClickListener {
+        btu4.setOnClickListener {
             startActivity<MainActivity2>(this)
+        }
+
+        btu5.setOnClickListener {
+            startActivity<MainActivity3>(this)
         }
 
     }
