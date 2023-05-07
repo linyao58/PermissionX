@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.alibaba.android.arouter.launcher.ARouter
 
-open class BaseActivity: AppCompatActivity() {
+open class BaseNewActivity: AppCompatActivity() {
 
     val aRouter = ARouter.getInstance()
 

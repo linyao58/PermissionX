@@ -1,11 +1,10 @@
 package com.permissionx.linyaodev
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_login.*
 
-open class ThreeLoginActivity : LoginActivity() {
+open class ThreeLoginNewActivity : LoginNewActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

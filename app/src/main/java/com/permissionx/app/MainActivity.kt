@@ -1,7 +1,6 @@
 package com.permissionx.app
 
 import android.Manifest
-import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
@@ -52,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btu5.setOnClickListener {
-            startActivity<MainActivity3>(this)
+            startActivity<MainNewActivity3>(this)
         }
 
     }

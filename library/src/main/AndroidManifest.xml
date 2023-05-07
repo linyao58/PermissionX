@@ -4,9 +4,9 @@
 
     <application
         android:name=".MainApplication">
-        <activity android:name=".ThreeLoginActivity"></activity>
-        <activity android:name=".NewLoginActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".ThreeLoginNewActivity"></activity>
+        <activity android:name=".NewLoginNewActivity" />
+        <activity android:name=".LoginNewActivity" />
     </application>
 
 </manifest>

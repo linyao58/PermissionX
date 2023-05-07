@@ -3,7 +3,7 @@ package com.permissionx.linyaodev
 import android.app.Application
 import com.alibaba.android.arouter.launcher.ARouter
 
-class MainApplication: Application() {
+class MyApplication: Application() {
 
     override fun onCreate() {
         super.onCreate()

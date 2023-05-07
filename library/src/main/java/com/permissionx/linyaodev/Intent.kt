@@ -3,7 +3,7 @@ package com.permissionx.linyaodev
 import com.alibaba.android.arouter.facade.Postcard
 import com.alibaba.android.arouter.facade.callback.NavigationCallback
 
-fun BaseActivity.toPage(
+fun BaseNewActivity.toPage(
     route: String,
     requestCode: Int = -1,
     navCallback: NavigationCallback? = null,
