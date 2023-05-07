@@ -3,7 +3,7 @@
     package="com.permissionx.linyaodev">
 
     <application
-        android:name=".MainApplication">
+        android:name=".MyApplication">
         <activity android:name=".ThreeLoginNewActivity"></activity>
         <activity android:name=".NewLoginNewActivity" />
         <activity android:name=".LoginNewActivity" />
