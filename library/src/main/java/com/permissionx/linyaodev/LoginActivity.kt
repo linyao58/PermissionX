@@ -6,9 +6,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 
-open class LoginActivity : AppCompatActivity() {
-
-
+open class LoginActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

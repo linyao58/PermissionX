@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.permissionx.linyaodev">
 
-    <application>
+    <application
+        android:name=".MainApplication">
         <activity android:name=".ThreeLoginActivity"></activity>
         <activity android:name=".NewLoginActivity" />
         <activity android:name=".LoginActivity" />

@@ -11,6 +11,7 @@ open class NewLoginActivity : LoginActivity() {
 
         login.text = "新的登录界面"
         btu.setOnClickListener {
+            toPage(main)
             Toast.makeText(this, "登录成功", Toast.LENGTH_SHORT).show()
         }
 
