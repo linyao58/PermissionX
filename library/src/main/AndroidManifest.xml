@@ -2,8 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.permissionx.linyaodev">
 
-    <application
-        android:name=".MyApplication">
+    <application>
         <activity android:name=".ThreeLoginNewActivity"></activity>
         <activity android:name=".NewLoginNewActivity" />
         <activity android:name=".LoginNewActivity" />
